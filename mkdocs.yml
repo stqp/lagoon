@@ -239,7 +239,17 @@ markdown_extensions:
 
 plugins:
   - search
-  - awesome-pages
+  - i18n:
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: ja
+          name: 日本語
+          build: true
+          nav_translations:
+            Home: ホーム
   - redirects:
       redirect_maps:
         # Shortcut URLs for build and compose errors
